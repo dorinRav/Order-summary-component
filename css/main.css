@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --white: hsl(255, 100%, 100%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-hover: hsl(245, 50%, 52%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background-image: url(../img/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+}
+
+.main-field {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  height: 570px;
+  background-color: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 160px;
+}
+
+.txt-header {
+  color: var(--dark-blue);
+}
+
+.txt-p {
+  line-height: 25px;
+  color: var(--desaturated-blue);
+}
+
+.order-info {
+  padding: 30px;
+  text-align: center;
+}
+.order-info h2 {
+  margin-bottom: 15px;
+}
+
+.payment-plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px auto;
+  width: 280px;
+  height: 80px;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+}
+.payment-plan a {
+  margin-left: 25px;
+  margin-right: 10px;
+  color: var(--bright-blue);
+}
+
+.pay-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.pay-action .btn {
+  width: 280px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.pay-action .btn-pay {
+  margin-bottom: 10px;
+  background-color: var(--bright-blue);
+  color: var(--white);
+}
+.pay-action .btn-cancel {
+  background-color: var(--white);
+}
+
+a:hover {
+  color: var(--bright-blue-hover);
+  text-decoration: none;
+}
+
+.btn-pay:hover {
+  background-color: var(--bright-blue-hover);
+}
+
+.btn-cancel:hover {
+  color: var(--dark-blue);
+}
+
+@media (min-width: 992px) {
+  body {
+    background-image: url(../img/pattern-background-desktop.svg);
+  }
+}/*# sourceMappingURL=main.css.map */
